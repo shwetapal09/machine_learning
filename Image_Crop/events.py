@@ -18,7 +18,7 @@ def drawCrop(event,x,y,flags,params):
 		img_crop=img[iy:fy,ix:fx]
 		cv2.imwrite("cropped_image.jpg",img_crop)
         #cv2.imshow("selectedfruit",img_crop)
-		#cv2.waitKey(0)	 -->use this if you to display the cropped image in new window
+		#cv2.waitKey(0)	 -->use this if you want to display the cropped image in new window
 cv2.namedWindow(winname="fruit")
 cv2.setMouseCallback("fruit",drawCrop)
 
